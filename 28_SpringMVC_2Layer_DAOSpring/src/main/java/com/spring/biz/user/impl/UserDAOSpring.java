@@ -1,0 +1,30 @@
+package com.spring.biz.user.impl;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.jdbc.core.JdbcTemplate;
+import org.springframework.stereotype.Repository;
+
+import com.spring.biz.user.UserVO;
+
+@Repository
+public class UserDAOSpring {
+	//@Autowired
+	private JdbcTemplate jdbcTemplate;
+	
+	//SQL문
+	private final String USER_GET 
+		= "SELECT * FROM USERS WHERE ID = ? AND PASSWORD = ? ";	
+	
+	@Autowired
+	public UserDAOSpring (JdbcTemplate jdbcTemplate) {
+		System.out.println(">> UserDAOSpring() 객체 생성");
+		this.jdbcTemplate = jdbcTemplate;
+	}
+	
+	// id, password가 일치하는 데이터 조회
+	public UserVO getUser(UserVO vo) {
+		System.out.println(">> Spring JDBC로 getUser()");
+		Object[] args = {vo.getId(), vo.getPassword()};
+		return jdbcTemplate.queryForObject(USER_GET, args, new UserRowMapper());
+	}
+}

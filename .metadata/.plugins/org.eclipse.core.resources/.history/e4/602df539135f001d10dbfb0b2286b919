@@ -1,0 +1,21 @@
+package com.spring.biz.common;
+
+import org.aspectj.lang.JoinPoint;
+
+public class AfterReturningAdvice {
+//	public void afterReturnLog() {
+//		System.out.println("[AfterReturningAdvice.afterReturnLog] "
+//				+ "비즈니스 로직 수행 후 로그 (정상실행시)");
+//			
+//	}
+
+	// returnObj : 추가 바인드변수를 사용시에는 스프링 설정 파일에 작성 추가
+	public void afterReturnLog(JoinPoint jp, Object returnObj) {
+		//정상실행시 전달받을 returnObj는 Spring framework에 지정해 줘야 함
+		
+		System.out.println("[AfterReturningAdvice.afterReturnLog] "
+				+ "비즈니스 로직 수행 후 로그 (정상실행시)");
+			
+	}
+	
+}

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aop-reference-model>
+<aop-project name="18_SpringMVC_Board"/>
+<aop-project name="27_SpringMVC_2Layer"/>
+<aop-project name="00_SpringMVC_example"/>
+<aop-project name="20_SpringMVC_annotation"/>
+<aop-project name="22_SpringMVC_GET_POST_ModelAttribute"/>
+<aop-project name="25_SpringMVC_ModelAttribute"/>
+<aop-project name="19_SpringMVC_Board_ViewResolver"/>
+<aop-project name="24_SpringMVC_SearchCondition"/>
+<aop-project name="21_SpringMVC_annotation_string"/>
+<aop-project name="17_MVC_Board"/>
+<aop-project name="23_SpringMVC_RequestParam"/>
+<aop-project name="14_BoardService_JdbcTemplate"/>
+<aop-project name="28_SpringMVC_2Layer_DAOSpring"/>
+<aop-project name="26_SpringMVC_SessionAttributes"/>
+</aop-reference-model>

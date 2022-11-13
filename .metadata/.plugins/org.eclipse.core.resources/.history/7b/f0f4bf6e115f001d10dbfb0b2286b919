@@ -1,0 +1,10 @@
+package com.spring.biz.common;
+
+import org.aspectj.lang.JoinPoint;
+
+public class BeforeAdvice {
+
+	public void beforeLog(JoinPoint jp) {
+		System.out.println("[사전처리-BeforeAdvice.beforeLog]");
+	}
+}

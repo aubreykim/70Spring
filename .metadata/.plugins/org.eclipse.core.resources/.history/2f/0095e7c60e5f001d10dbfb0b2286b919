@@ -1,0 +1,10 @@
+package com.spring.biz.common;
+
+import org.aspectj.lang.ProceedingJoinPoint;
+
+public class AroundAdvice {
+	public Object aroundLog(ProceedingJoinPoint pjp) {
+		
+		return null;
+	}
+}

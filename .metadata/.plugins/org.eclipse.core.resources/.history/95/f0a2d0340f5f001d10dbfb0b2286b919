@@ -1,0 +1,12 @@
+package com.spring.biz.common;
+
+import org.aspectj.lang.ProceedingJoinPoint;
+
+public class AroundAdvice {
+	public Object aroundLog(ProceedingJoinPoint pjp) throws Throwable {
+		
+		Object returnObj = pjp.proceed(); //조인포인트 메소드 실행
+		
+		return returnObj;
+	}
+}

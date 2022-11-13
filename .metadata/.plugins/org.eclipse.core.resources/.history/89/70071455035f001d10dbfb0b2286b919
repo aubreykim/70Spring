@@ -1,0 +1,8 @@
+package com.spring.biz.common;
+
+public class AfterAdvice {
+
+	public void beforeLog() {
+		System.out.println("[사전처리-BeforeAdvice.beforeLog]");
+	}
+}
